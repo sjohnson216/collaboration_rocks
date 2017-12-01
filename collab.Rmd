@@ -18,6 +18,7 @@ Yes, dress, heals once a year!
 
 oh nice! i have to decide which heels to wear... the really painful ones that are super cute or the less cute ones that dont hurt as much... or vans
 
+## This is how much our feet will hurt based on heel-height
 ```{r}
 library(tidyverse)
 shoes <-c(1:10)
@@ -25,10 +26,22 @@ sh <- shoes/2.5
 pain <- c(1:10)
 x <- data.frame(sh, pain)
 
-hurts <- ggplot(x, aes(x=sh, y=pain)) + geom_line() +  labs(title= "CRAP MY FEET HURT",
+hurts <- ggplot(x, aes(x=sh, y=pain)) + geom_line(aes(size=3)) +  labs(title= "CRAP MY FEET HURT",
        x= "Heel Height",
        y= "Pain Level")
 ```
 
 
-testing
+## NYC Flight exploration
+```{r}
+library(tidyverse)
+library(nycflights13) #please install.packages("nycflights13")
+
+flights
+
+##Jan 1 data
+flights %>% 
+  filter(month == 1,
+         day == 1)
+```
+
