@@ -139,8 +139,13 @@ $(document).ready(function () {
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>shoes &lt;-c(1:10)
+sh &lt;- shoes/2.5
 pain &lt;- c(1:10)
-x &lt;- c(shoes, pain)</code></pre>
+x &lt;- data.frame(sh, pain)
+
+hurts &lt;- ggplot(x, aes(x=sh, y=pain)) + geom_line() +  labs(title= &quot;CRAP MY FEET HURT&quot;,
+       x= &quot;Heel Height&quot;,
+       y= &quot;Pain Level&quot;)</code></pre>
 <p>testing</p>
 
 

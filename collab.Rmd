@@ -21,9 +21,13 @@ oh nice! i have to decide which heels to wear... the really painful ones that ar
 ```{r}
 library(tidyverse)
 shoes <-c(1:10)
+sh <- shoes/2.5
 pain <- c(1:10)
-x <- c(shoes, pain)
+x <- data.frame(sh, pain)
 
+hurts <- ggplot(x, aes(x=sh, y=pain)) + geom_line() +  labs(title= "CRAP MY FEET HURT",
+       x= "Heel Height",
+       y= "Pain Level")
 ```
 
 
