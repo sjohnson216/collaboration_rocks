@@ -29,6 +29,7 @@ x <- data.frame(sh, pain)
 hurts <- ggplot(x, aes(x=sh, y=pain)) + geom_line(aes(size=3)) +  labs(title= "CRAP MY FEET HURT",
        x= "Heel Height",
        y= "Pain Level")
+hurts
 ```
 
 
