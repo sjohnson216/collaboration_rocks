@@ -18,4 +18,13 @@ Yes, dress, heals once a year!
 
 oh nice! i have to decide which heels to wear... the really painful ones that are super cute or the less cute ones that dont hurt as much... or vans
 
+```{r}
+library(tidyverse)
+shoes <-c(1:10)
+pain <- c(1:10)
+x <- c(shoes, pain)
+
+```
+
+
 testing
