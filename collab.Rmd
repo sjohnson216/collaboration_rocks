@@ -1,0 +1,11 @@
+---
+title: "Collab.Rmd"
+author: "Shan and Kris"
+date: "12/1/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
