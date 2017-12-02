@@ -47,9 +47,9 @@ flights %>%
          day == 1)
 ```
 
-<<<<<<< HEAD
+
 ##try plotly looks super fun and html widgets
-=======
+
 
 ```{r}
 filter(flights, month == 11 | month == 12)
